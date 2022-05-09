@@ -1,0 +1,167 @@
+@media only screen and (min-width: 240px) {
+    *{
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    
+    body{
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 100;
+        background-color: white;
+    }
+    
+    header{
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    :root {
+        --primary-color: rgba(0, 0, 0, 0.75);
+        --overlay-color: rgba(16, 17, 17, 0.85);
+        --menu-speed: 0.75s;
+    }
+    
+    .header1 {
+        background: var(--primary-color);
+        color: #fff;
+        height: 100vh;
+        position: relative;
+    }
+    
+    .header1:before {
+        content: '';
+        background: url('../../img/raineonatrain.jpeg') no-repeat center center/cover;
+        background-attachment: fixed;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    
+    nav{
+        width: 100%;
+        height: 50px;
+        background-color: rgb(0,0,0);
+        position: sticky;
+        top:0;
+        z-index: 1;
+    }
+    
+    .nav-container{
+        width: 70%;
+        margin: 0 auto;
+        padding-top: 11px;
+        display: flex;
+        flex-direction: left;
+    }
+    
+    .aboutmelink{
+        color: white;
+        text-decoration: none;
+        letter-spacing: 2px;
+    }
+
+    main{
+        margin: 0 auto;
+        width: 100%;
+        margin-top: 3rem;
+        min-height: 100%; 
+        background-color: white;
+        /* padding: 3rem; */
+        padding: 1rem;
+    }
+
+    .PostImage {
+        /* padding: 10px 0; */
+        margin: 1rem 0;
+        height: 100%;
+        /* height: 60vh; */
+        width: 100%;
+        /* border: 1px solid black; */
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .PostTextContainer{
+        width: 100%;
+        padding: 10px 0;
+        margin-top: 3rem;
+    }
+
+    .PostText{
+        width: 100%;
+        padding: 10px 0;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-align: justify;
+    }
+
+    .PostShareIconContainer {
+        padding-top: 25px;
+        height: 100%;
+        width: 65%;
+        /* // border: 2px solid black; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: 0;
+       
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+
+  
+    footer{
+        margin-top: 5rem;
+        width: 100%;
+        height: 25vh; 
+        background-color: rgb(0,0,0);
+    }
+    
+    .footer-container{
+        margin: 0 auto;
+        width: 70%;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 70px 0;
+    }
+}
+
+@media only screen and (min-width: 1042px) {
+    main{
+        width: 80%;
+        margin-top: 6rem;
+    }
+
+    .PostText{
+        text-align: center;
+    }
+
+    .PostShareIconContainer {
+        
+        width: 35%;
+       
+    }
+}
